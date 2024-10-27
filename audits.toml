@@ -1,4 +1,10 @@
 
+[[audits.cfg-expr]]
+who = "Sebastian Wiesner <sebastian@swsnr.de>"
+criteria = "safe-to-run"
+delta = "0.15.8 -> 0.16.0"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
 [[audits.crossbeam-utils]]
 who = "Sebastian Wiesner <sebastian@swsnr.de>"
 criteria = "safe-to-run"
@@ -484,13 +490,6 @@ user-id = 1
 start = "2019-05-06"
 end = "2025-10-26"
 notes = "Trusted by mozilla"
-aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
-
-[[trusted.systemd-journal-logger]]
-criteria = "safe-to-run"
-user-id = 4372
-start = "2021-05-28"
-end = "2025-10-26"
 aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
 
 [[trusted.target-lexicon]]
