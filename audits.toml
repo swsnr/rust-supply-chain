@@ -1,4 +1,29 @@
 
+[[audits.crossbeam-utils]]
+who = "Sebastian Wiesner <sebastian@swsnr.de>"
+criteria = "safe-to-run"
+delta = "0.8.15 -> 0.8.14"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[audits.gettext-sys]]
+who = "Sebastian Wiesner <sebastian@swsnr.de>"
+criteria = "safe-to-run"
+version = "0.22.5"
+notes = "build.rs looks okay; embedded gettext is an original upstream release file."
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[audits.macaddr]]
+who = "Sebastian Wiesner <sebastian@swsnr.de>"
+criteria = "safe-to-run"
+version = "1.0.1"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[audits.memoffset]]
+who = "Sebastian Wiesner <sebastian@swsnr.de>"
+criteria = "safe-to-run"
+delta = "0.9.0 -> 0.9.1"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
 [[audits.pkg-config]]
 who = "Sebastian Wiesner <sebastian@swsnr.de>"
 criteria = "safe-to-deploy"
@@ -12,6 +37,46 @@ criteria = "safe-to-deploy"
 delta = "0.1.0 -> 0.1.1"
 notes = "Explicitly forbids unsafe code now; remaining changes is just new license files"
 aggregated-from = "https://raw.githubusercontent.com/swsnr/git-gone/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.aho-corasick]]
+criteria = "safe-to-run"
+user-id = 189
+start = "2019-03-28"
+end = "2025-10-26"
+notes = "Trusted by mozilla"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.autocfg]]
+criteria = "safe-to-run"
+user-id = 539
+start = "2019-05-22"
+end = "2025-10-26"
+notes = "Trusted by mozilla"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.cairo-rs]]
+criteria = "safe-to-run"
+user-id = 3623
+start = "2021-07-08"
+end = "2025-10-26"
+notes = "Known Gnome developer"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.cairo-sys-rs]]
+criteria = "safe-to-run"
+user-id = 3623
+start = "2021-10-16"
+end = "2025-10-26"
+notes = "Known Gnome developer"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.cc]]
+criteria = "safe-to-run"
+user-id = 2915
+start = "2024-02-20"
+end = "2025-10-26"
+notes = "Trusted by mozilla"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
 
 [[trusted.cc]]
 criteria = "safe-to-run"
@@ -29,6 +94,94 @@ end = "2025-10-27"
 notes = "Trusted by Mozilla and Bytecode Alliance"
 aggregated-from = "https://raw.githubusercontent.com/swsnr/git-gone/refs/heads/main/supply-chain/audits.toml"
 
+[[trusted.env_filter]]
+criteria = "safe-to-run"
+user-id = 6743
+start = "2024-01-19"
+end = "2025-10-26"
+notes = "Trusted by mozilla"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.env_logger]]
+criteria = "safe-to-run"
+user-id = 6743
+start = "2022-11-24"
+end = "2025-10-26"
+notes = "Trusted by mozilla"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.errno]]
+criteria = "safe-to-run"
+user-id = 6825
+start = "2023-08-29"
+end = "2025-10-26"
+notes = "Trusted by mozilla"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.gdk-pixbuf]]
+criteria = "safe-to-run"
+user-id = 3623
+start = "2022-01-15"
+end = "2025-10-26"
+notes = "Known Gnome developer"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.gdk-pixbuf-sys]]
+criteria = "safe-to-run"
+user-id = 3623
+start = "2022-01-15"
+end = "2025-10-26"
+notes = "Known Gnome developer"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.gdk4]]
+criteria = "safe-to-run"
+user-id = 3623
+start = "2022-01-15"
+end = "2025-10-26"
+notes = "Known Gnome developer"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.gdk4]]
+criteria = "safe-to-run"
+user-id = 54339
+start = "2021-07-12"
+end = "2025-10-26"
+notes = "Known Gnome developer"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.gdk4-sys]]
+criteria = "safe-to-run"
+user-id = 3623
+start = "2021-04-04"
+end = "2025-10-26"
+notes = "Known Gnome developer"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.gdk4-sys]]
+criteria = "safe-to-run"
+user-id = 54339
+start = "2021-07-12"
+end = "2025-10-26"
+notes = "Known Gnome developer"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.gio]]
+criteria = "safe-to-run"
+user-id = 3623
+start = "2020-08-28"
+end = "2025-10-26"
+notes = "Known Gnome developer"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.gio-sys]]
+criteria = "safe-to-run"
+user-id = 3623
+start = "2020-09-16"
+end = "2025-10-26"
+notes = "Known Gnome developer"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
 [[trusted.git2]]
 criteria = "safe-to-run"
 user-id = 4333
@@ -37,6 +190,150 @@ end = "2025-10-27"
 notes = "Trusted by Mozilla and Bytecode Alliance"
 aggregated-from = "https://raw.githubusercontent.com/swsnr/git-gone/refs/heads/main/supply-chain/audits.toml"
 
+[[trusted.glib]]
+criteria = "safe-to-run"
+user-id = 3623
+start = "2020-02-14"
+end = "2025-10-26"
+notes = "Known Gnome developer"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.glib-build-tools]]
+criteria = "safe-to-run"
+user-id = 3623
+start = "2022-05-07"
+end = "2025-10-26"
+notes = "Known Gnome developer"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.glib-macros]]
+criteria = "safe-to-run"
+user-id = 3623
+start = "2021-07-08"
+end = "2025-10-26"
+notes = "Known Gnome developer"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.glib-sys]]
+criteria = "safe-to-run"
+user-id = 3623
+start = "2020-09-16"
+end = "2025-10-26"
+notes = "Known Gnome developer"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.gobject-sys]]
+criteria = "safe-to-run"
+user-id = 3623
+start = "2022-01-15"
+end = "2025-10-26"
+notes = "Known Gnome developer"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.graphene-rs]]
+criteria = "safe-to-run"
+user-id = 3623
+start = "2021-04-04"
+end = "2025-10-26"
+notes = "Known Gnome developer"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.graphene-sys]]
+criteria = "safe-to-run"
+user-id = 3623
+start = "2021-04-04"
+end = "2025-10-26"
+notes = "Known Gnome developer"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.gsk4]]
+criteria = "safe-to-run"
+user-id = 3623
+start = "2022-01-15"
+end = "2025-10-26"
+notes = "Known Gnome developer"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.gsk4]]
+criteria = "safe-to-run"
+user-id = 54339
+start = "2021-07-12"
+end = "2025-10-26"
+notes = "Known Gnome developer"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.gsk4-sys]]
+criteria = "safe-to-run"
+user-id = 3623
+start = "2021-04-04"
+end = "2025-10-26"
+notes = "Known Gnome developer"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.gsk4-sys]]
+criteria = "safe-to-run"
+user-id = 54339
+start = "2021-07-12"
+end = "2025-10-26"
+notes = "Known Gnome developer"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.gtk]]
+criteria = "safe-to-run"
+user-id = 3623
+start = "2021-08-24"
+end = "2025-10-26"
+notes = "Known Gnome developer"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.gtk4]]
+criteria = "safe-to-run"
+user-id = 3623
+start = "2022-01-15"
+end = "2025-10-26"
+notes = "Known Gnome developer"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.gtk4-macros]]
+criteria = "safe-to-run"
+user-id = 3623
+start = "2021-04-04"
+end = "2025-10-26"
+notes = "Known Gnome developer"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.gtk4-sys]]
+criteria = "safe-to-run"
+user-id = 3623
+start = "2021-04-04"
+end = "2025-10-26"
+notes = "Known Gnome developer"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.gtk4-sys]]
+criteria = "safe-to-run"
+user-id = 54339
+start = "2021-07-12"
+end = "2025-10-26"
+notes = "Known Gnome developer"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.hashbrown]]
+criteria = "safe-to-run"
+user-id = 2915
+start = "2019-04-02"
+end = "2025-10-26"
+notes = "Trusted by mozilla"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.indexmap]]
+criteria = "safe-to-run"
+user-id = 539
+start = "2020-01-15"
+end = "2025-10-26"
+notes = "Trusted by mozilla"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
 [[trusted.jobserver]]
 criteria = "safe-to-run"
 user-id = 1
@@ -44,6 +341,30 @@ start = "2019-03-15"
 end = "2025-10-27"
 notes = "Trusted by Mozilla and Bytecode Alliance"
 aggregated-from = "https://raw.githubusercontent.com/swsnr/git-gone/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.libadwaita]]
+criteria = "safe-to-run"
+user-id = 54339
+start = "2021-06-23"
+end = "2025-10-26"
+notes = "Known Gnome developer"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.libadwaita-sys]]
+criteria = "safe-to-run"
+user-id = 54339
+start = "2021-06-23"
+end = "2025-10-26"
+notes = "Known Gnome developer"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.libc]]
+criteria = "safe-to-run"
+user-id = 51017
+start = "2020-03-17"
+end = "2025-10-26"
+notes = "Trusted by mozilla"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
 
 [[trusted.libgit2-sys]]
 criteria = "safe-to-run"
@@ -60,3 +381,210 @@ start = "2020-08-14"
 end = "2025-10-27"
 notes = "Trusted by Mozilla and Bytecode Alliance"
 aggregated-from = "https://raw.githubusercontent.com/swsnr/git-gone/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.linux-raw-sys]]
+criteria = "safe-to-run"
+user-id = 6825
+start = "2021-06-12"
+end = "2025-10-26"
+notes = "Trusted by mozilla"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.memchr]]
+criteria = "safe-to-run"
+user-id = 189
+start = "2019-07-07"
+end = "2025-10-26"
+notes = "Trusted by mozilla"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.pango]]
+criteria = "safe-to-run"
+user-id = 3623
+start = "2020-08-11"
+end = "2025-10-26"
+notes = "Known Gnome developer"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.pango-sys]]
+criteria = "safe-to-run"
+user-id = 3623
+start = "2022-01-15"
+end = "2025-10-26"
+notes = "Known Gnome developer"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.pkg-config]]
+criteria = "safe-to-run"
+user-id = 3623
+start = "2019-07-25"
+end = "2025-10-26"
+notes = "Known Gnome developer"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.regex]]
+criteria = "safe-to-run"
+user-id = 189
+start = "2019-02-27"
+end = "2025-10-26"
+notes = "Trusted by mozilla"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.regex-automata]]
+criteria = "safe-to-run"
+user-id = 189
+start = "2019-02-25"
+end = "2025-10-26"
+notes = "Trusted by mozilla"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.regex-syntax]]
+criteria = "safe-to-run"
+user-id = 189
+start = "2019-03-30"
+end = "2025-10-26"
+notes = "Trusted by mozilla"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.rustix]]
+criteria = "safe-to-run"
+user-id = 6825
+start = "2021-10-29"
+end = "2025-10-26"
+notes = "Trusted by mozilla"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.ryu]]
+criteria = "safe-to-run"
+user-id = 3618
+start = "2019-05-02"
+end = "2025-10-26"
+notes = "Trusted by mozilla"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.slab]]
+criteria = "safe-to-run"
+user-id = 6741
+start = "2021-10-13"
+end = "2025-10-26"
+notes = "Trusted by mozilla"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.smallvec]]
+criteria = "safe-to-run"
+user-id = 2017
+start = "2019-10-28"
+end = "2025-10-26"
+notes = "Trusted by mozilla"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.socket2]]
+criteria = "safe-to-run"
+user-id = 1
+start = "2019-05-06"
+end = "2025-10-26"
+notes = "Trusted by mozilla"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.systemd-journal-logger]]
+criteria = "safe-to-run"
+user-id = 4372
+start = "2021-05-28"
+end = "2025-10-26"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.target-lexicon]]
+criteria = "safe-to-run"
+user-id = 696
+start = "2024-07-30"
+end = "2025-10-26"
+notes = "Trusted by mozilla"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.target-lexicon]]
+criteria = "safe-to-run"
+user-id = 6825
+start = "2019-03-06"
+end = "2025-10-26"
+notes = "Trusted by mozilla"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.windows-sys]]
+criteria = "safe-to-run"
+user-id = 64539
+start = "2021-11-15"
+end = "2025-10-26"
+notes = "Trusted by mozilla"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.windows-targets]]
+criteria = "safe-to-run"
+user-id = 64539
+start = "2022-09-09"
+end = "2025-10-26"
+notes = "Trusted by mozilla"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.windows_aarch64_gnullvm]]
+criteria = "safe-to-run"
+user-id = 64539
+start = "2022-09-01"
+end = "2025-10-26"
+notes = "Trusted by mozilla"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.windows_aarch64_msvc]]
+criteria = "safe-to-run"
+user-id = 64539
+start = "2021-11-05"
+end = "2025-10-26"
+notes = "Trusted by mozilla"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.windows_i686_gnu]]
+criteria = "safe-to-run"
+user-id = 64539
+start = "2021-10-28"
+end = "2025-10-26"
+notes = "Trusted by mozilla"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.windows_i686_gnullvm]]
+criteria = "safe-to-run"
+user-id = 64539
+start = "2024-04-02"
+end = "2025-10-26"
+notes = "Trusted by mozilla"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.windows_i686_msvc]]
+criteria = "safe-to-run"
+user-id = 64539
+start = "2021-10-27"
+end = "2025-10-26"
+notes = "Trusted by mozilla"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.windows_x86_64_gnu]]
+criteria = "safe-to-run"
+user-id = 64539
+start = "2021-10-28"
+end = "2025-10-26"
+notes = "Trusted by mozilla"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.windows_x86_64_gnullvm]]
+criteria = "safe-to-run"
+user-id = 64539
+start = "2022-09-01"
+end = "2025-10-26"
+notes = "Trusted by mozilla"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.windows_x86_64_msvc]]
+criteria = "safe-to-run"
+user-id = 64539
+start = "2021-10-27"
+end = "2025-10-26"
+notes = "Trusted by mozilla"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
