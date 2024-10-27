@@ -1,0 +1,62 @@
+
+[[audits.pkg-config]]
+who = "Sebastian Wiesner <sebastian@swsnr.de>"
+criteria = "safe-to-deploy"
+delta = "0.3.29 -> 0.3.30"
+notes = "This change just adds documentation."
+aggregated-from = "https://raw.githubusercontent.com/swsnr/git-gone/refs/heads/main/supply-chain/audits.toml"
+
+[[audits.tinyvec_macros]]
+who = "Sebastian Wiesner <sebastian@swsnr.de>"
+criteria = "safe-to-deploy"
+delta = "0.1.0 -> 0.1.1"
+notes = "Explicitly forbids unsafe code now; remaining changes is just new license files"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/git-gone/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.cc]]
+criteria = "safe-to-run"
+user-id = 2915
+start = "2024-02-20"
+end = "2025-10-27"
+notes = "Trusted by Mozilla and Bytecode Alliance"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/git-gone/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.clap_derive]]
+criteria = "safe-to-run"
+user-id = 6743
+start = "2021-12-08"
+end = "2025-10-27"
+notes = "Trusted by Mozilla and Bytecode Alliance"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/git-gone/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.git2]]
+criteria = "safe-to-run"
+user-id = 4333
+start = "2020-08-19"
+end = "2025-10-27"
+notes = "Trusted by Mozilla and Bytecode Alliance"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/git-gone/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.jobserver]]
+criteria = "safe-to-run"
+user-id = 1
+start = "2019-03-15"
+end = "2025-10-27"
+notes = "Trusted by Mozilla and Bytecode Alliance"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/git-gone/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.libgit2-sys]]
+criteria = "safe-to-run"
+user-id = 4333
+start = "2020-08-19"
+end = "2025-10-27"
+notes = "Trusted by Mozilla and Bytecode Alliance"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/git-gone/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.libz-sys]]
+criteria = "safe-to-run"
+user-id = 4333
+start = "2020-08-14"
+end = "2025-10-27"
+notes = "Trusted by Mozilla and Bytecode Alliance"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/git-gone/refs/heads/main/supply-chain/audits.toml"
