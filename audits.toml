@@ -11,11 +11,11 @@ criteria = "safe-to-run"
 delta = "0.8.15 -> 0.8.14"
 aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
 
-[[audits.gettext-sys]]
+[[audits.field-offset]]
 who = "Sebastian Wiesner <sebastian@swsnr.de>"
 criteria = "safe-to-run"
-version = "0.22.5"
-notes = "build.rs looks okay; embedded gettext is an original upstream release file."
+version = "0.3.6"
+notes = "Very simple crate which doesn't interact with the underlying system at all."
 aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
 
 [[audits.macaddr]]
