@@ -5,6 +5,12 @@ criteria = "safe-to-run"
 delta = "0.15.8 -> 0.16.0"
 aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
 
+[[audits.cfg-expr]]
+who = "Sebastian Wiesner <sebastian@swsnr.de>"
+criteria = "safe-to-run"
+delta = "0.16.0 -> 0.17.0"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
 [[audits.crossbeam-utils]]
 who = "Sebastian Wiesner <sebastian@swsnr.de>"
 criteria = "safe-to-run"
@@ -16,6 +22,12 @@ who = "Sebastian Wiesner <sebastian@swsnr.de>"
 criteria = "safe-to-run"
 version = "0.3.6"
 notes = "Very simple crate which doesn't interact with the underlying system at all."
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[audits.futures-executor]]
+who = "Sebastian Wiesner <sebastian@swsnr.de>"
+criteria = "safe-to-run"
+delta = "0.3.28 -> 0.3.31"
 aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
 
 [[audits.macaddr]]
@@ -30,12 +42,31 @@ criteria = "safe-to-run"
 delta = "0.9.0 -> 0.9.1"
 aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
 
+[[audits.pin-project-lite]]
+who = "Sebastian Wiesner <sebastian@swsnr.de>"
+criteria = "safe-to-run"
+delta = "0.2.14 -> 0.2.15"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
 [[audits.pkg-config]]
 who = "Sebastian Wiesner <sebastian@swsnr.de>"
 criteria = "safe-to-deploy"
 delta = "0.3.29 -> 0.3.30"
 notes = "This change just adds documentation."
 aggregated-from = "https://raw.githubusercontent.com/swsnr/git-gone/refs/heads/main/supply-chain/audits.toml"
+
+[[audits.system-deps]]
+who = "Sebastian Wiesner <sebastian@swsnr.de>"
+criteria = "safe-to-run"
+version = "7.0.2"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[audits.system-deps]]
+who = "Sebastian Wiesner <sebastian@swsnr.de>"
+criteria = "safe-to-deploy"
+delta = "7.0.2 -> 7.0.3"
+notes = "The diff just updates a dependency version, and does not involve a code change."
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
 
 [[audits.tinyvec_macros]]
 who = "Sebastian Wiesner <sebastian@swsnr.de>"
@@ -300,12 +331,28 @@ end = "2025-10-26"
 notes = "Known Gnome developer"
 aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
 
+[[trusted.gtk4]]
+criteria = "safe-to-run"
+user-id = 54339
+start = "2021-07-12"
+end = "2025-11-02"
+notes = "Well-known Gnome developer"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
 [[trusted.gtk4-macros]]
 criteria = "safe-to-run"
 user-id = 3623
 start = "2021-04-04"
 end = "2025-10-26"
 notes = "Known Gnome developer"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.gtk4-macros]]
+criteria = "safe-to-run"
+user-id = 54339
+start = "2021-07-12"
+end = "2025-11-03"
+notes = "Well-known Gnome developer"
 aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
 
 [[trusted.gtk4-sys]]
@@ -468,6 +515,14 @@ end = "2025-10-26"
 notes = "Trusted by mozilla"
 aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
 
+[[trusted.serde_spanned]]
+criteria = "safe-to-run"
+user-id = 6743
+start = "2023-01-20"
+end = "2025-11-03"
+notes = "Trusted by mozilla and bytecode-alliance"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
 [[trusted.slab]]
 criteria = "safe-to-run"
 user-id = 6741
@@ -492,6 +547,14 @@ end = "2025-10-26"
 notes = "Trusted by mozilla"
 aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
 
+[[trusted.syn]]
+criteria = "safe-to-run"
+user-id = 3618
+start = "2019-03-01"
+end = "2025-11-03"
+notes = "swsnr trusts dtolnay"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
 [[trusted.target-lexicon]]
 criteria = "safe-to-run"
 user-id = 696
@@ -506,6 +569,14 @@ user-id = 6825
 start = "2019-03-06"
 end = "2025-10-26"
 notes = "Trusted by mozilla"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.toml_edit]]
+criteria = "safe-to-run"
+user-id = 6743
+start = "2021-09-13"
+end = "2025-11-03"
+notes = "swsnr trusts epage"
 aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
 
 [[trusted.windows-sys]]
@@ -586,4 +657,12 @@ user-id = 64539
 start = "2021-10-27"
 end = "2025-10-26"
 notes = "Trusted by mozilla"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.winnow]]
+criteria = "safe-to-run"
+user-id = 6743
+start = "2023-02-22"
+end = "2025-11-03"
+notes = "Trusted by mozilla and bytecode-alliance"
 aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
