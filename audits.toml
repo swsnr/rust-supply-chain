@@ -42,6 +42,17 @@ criteria = "safe-to-run"
 delta = "0.9.0 -> 0.9.1"
 aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
 
+[[audits.parking]]
+who = "Sebastian Wiesner <sebastian@swsnr.de>"
+criteria = "safe-to-deploy"
+version = "2.2.1"
+notes = """
+Contains no unsafe code, and does not access the system beyond parking.
+Thread locking and parking logic is a bit intricate, but well documented, and
+appears to be sound, superficially.
+"""
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
 [[audits.pin-project-lite]]
 who = "Sebastian Wiesner <sebastian@swsnr.de>"
 criteria = "safe-to-run"
@@ -54,6 +65,19 @@ criteria = "safe-to-deploy"
 delta = "0.3.29 -> 0.3.30"
 notes = "This change just adds documentation."
 aggregated-from = "https://raw.githubusercontent.com/swsnr/git-gone/refs/heads/main/supply-chain/audits.toml"
+
+[[audits.serde]]
+who = "Sebastian Wiesner <sebastian@swsnr.de>"
+criteria = "safe-to-deploy"
+delta = "1.0.214 -> 1.0.215"
+notes = "No actual code changes."
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[audits.serde_derive]]
+who = "Sebastian Wiesner <sebastian@swsnr.de>"
+criteria = "safe-to-run"
+delta = "1.0.214 -> 1.0.215"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
 
 [[audits.system-deps]]
 who = "Sebastian Wiesner <sebastian@swsnr.de>"
