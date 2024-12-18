@@ -23,6 +23,20 @@ criteria = "safe-to-run"
 delta = "0.8.15 -> 0.8.14"
 aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
 
+[[audits.crossbeam-utils]]
+who = "Sebastian Wiesner <sebastian@swsnr.de>"
+criteria = "safe-to-deploy"
+delta = "0.8.20 -> 0.8.21"
+notes = "Only changes cfg and lint annotations, no other code change"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[audits.event-listener-strategy]]
+who = "Sebastian Wiesner <sebastian@swsnr.de>"
+criteria = "safe-to-deploy"
+delta = "0.5.2 -> 0.5.3"
+notes = "Only exports a new feature and slightly changes some type signatures."
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
 [[audits.field-offset]]
 who = "Sebastian Wiesner <sebastian@swsnr.de>"
 criteria = "safe-to-run"
@@ -96,6 +110,13 @@ aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/mai
 who = "Sebastian Wiesner <sebastian@swsnr.de>"
 criteria = "safe-to-run"
 delta = "1.0.214 -> 1.0.215"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[audits.socket2]]
+who = "Sebastian Wiesner <sebastian@swsnr.de>"
+criteria = "safe-to-run"
+delta = "0.5.7 -> 0.5.8"
+notes = "Only straight-forward wrappers around underlying C/syscall APIs; looks correct, but I didn't audit use of unsafe and correct use of these unsafe APIs."
 aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
 
 [[audits.system-deps]]
@@ -715,12 +736,26 @@ start = "2019-03-01"
 end = "2025-12-17"
 aggregated-from = "https://raw.githubusercontent.com/swsnr/gnome-search-providers-vscode/refs/heads/main/supply-chain/audits.toml"
 
+[[trusted.serde]]
+criteria = "safe-to-run"
+user-id = 3618
+start = "2019-03-01"
+end = "2025-12-18"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
 [[trusted.serde_derive]]
 criteria = "safe-to-run"
 user-id = 3618
 start = "2019-03-01"
 end = "2025-12-17"
 aggregated-from = "https://raw.githubusercontent.com/swsnr/gnome-search-providers-vscode/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.serde_derive]]
+criteria = "safe-to-run"
+user-id = 3618
+start = "2019-03-01"
+end = "2025-12-18"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
 
 [[trusted.serde_repr]]
 criteria = "safe-to-run"
