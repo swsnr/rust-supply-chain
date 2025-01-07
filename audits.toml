@@ -50,6 +50,13 @@ criteria = "safe-to-run"
 delta = "0.3.28 -> 0.3.31"
 aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
 
+[[audits.glob]]
+who = "Sebastian Wiesner <sebastian@swsnr.de>"
+criteria = "safe-to-run"
+delta = "0.3.1 -> 0.3.2"
+notes = "A few slightly non-trivial changes around symlinks, but still safe-to-run"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
 [[audits.macaddr]]
 who = "Sebastian Wiesner <sebastian@swsnr.de>"
 criteria = "safe-to-run"
@@ -98,6 +105,12 @@ who = "Sebastian Wiesner <sebastian@swsnr.de>"
 criteria = "safe-to-run"
 delta = "1.0.89 -> 1.0.92"
 aggregated-from = "https://raw.githubusercontent.com/swsnr/gnome-search-providers-vscode/refs/heads/main/supply-chain/audits.toml"
+
+[[audits.quote]]
+who = "Sebastian Wiesner <sebastian@swsnr.de>"
+criteria = "safe-to-run"
+delta = "1.0.37 -> 1.0.38"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
 
 [[audits.serde]]
 who = "Sebastian Wiesner <sebastian@swsnr.de>"
