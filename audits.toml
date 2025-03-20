@@ -87,6 +87,12 @@ version = "0.3.6"
 notes = "Very simple crate which doesn't interact with the underlying system at all."
 aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
 
+[[audits.foldhash]]
+who = "Sebastian Wiesner <sebastian@swsnr.de>"
+criteria = "safe-to-run"
+delta = "0.1.4 -> 0.1.5"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/gnome-search-providers-vscode/refs/heads/main/supply-chain/audits.toml"
+
 [[audits.futures]]
 who = "Sebastian Wiesner <sebastian@swsnr.de>"
 criteria = "safe-to-run"
@@ -106,6 +112,12 @@ criteria = "safe-to-run"
 delta = "0.3.1 -> 0.3.2"
 notes = "A few slightly non-trivial changes around symlinks, but still safe-to-run"
 aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[audits.libc]]
+who = "Sebastian Wiesner <sebastian@swsnr.de>"
+criteria = "safe-to-run"
+delta = "0.2.170 -> 0.2.171"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/gnome-search-providers-vscode/refs/heads/main/supply-chain/audits.toml"
 
 [[audits.litemap]]
 who = "Sebastian Wiesner <sebastian@swsnr.de>"
@@ -142,6 +154,12 @@ who = "Sebastian Wiesner <sebastian@swsnr.de>"
 criteria = "safe-to-run"
 delta = "0.9.0 -> 0.9.1"
 aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[audits.once_cell]]
+who = "Sebastian Wiesner <sebastian@swsnr.de>"
+criteria = "safe-to-run"
+delta = "1.20.3 -> 1.21.1"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/gnome-search-providers-vscode/refs/heads/main/supply-chain/audits.toml"
 
 [[audits.parking]]
 who = "Sebastian Wiesner <sebastian@swsnr.de>"
@@ -220,6 +238,18 @@ aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/mai
 who = "Sebastian Wiesner <sebastian@swsnr.de>"
 criteria = "safe-to-run"
 delta = "1.0.37 -> 1.0.38"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/gnome-search-providers-vscode/refs/heads/main/supply-chain/audits.toml"
+
+[[audits.rand_chacha]]
+who = "Sebastian Wiesner <sebastian@swsnr.de>"
+criteria = "safe-to-run"
+delta = "0.3.1 -> 0.9.0"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/gnome-search-providers-vscode/refs/heads/main/supply-chain/audits.toml"
+
+[[audits.rand_core]]
+who = "Sebastian Wiesner <sebastian@swsnr.de>"
+criteria = "safe-to-run"
+delta = "0.6.4 -> 0.9.3"
 aggregated-from = "https://raw.githubusercontent.com/swsnr/gnome-search-providers-vscode/refs/heads/main/supply-chain/audits.toml"
 
 [[audits.ryu]]
@@ -1346,6 +1376,13 @@ start = "2023-08-28"
 end = "2026-01-29"
 aggregated-from = "https://raw.githubusercontent.com/swsnr/git-gone/refs/heads/main/supply-chain/audits.toml"
 
+[[trusted.libsqlite3-sys]]
+criteria = "safe-to-run"
+user-id = 5062
+start = "2019-03-10"
+end = "2026-03-17"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/gnome-search-providers-vscode/refs/heads/main/supply-chain/audits.toml"
+
 [[trusted.libz-sys]]
 criteria = "safe-to-run"
 user-id = 980
@@ -1588,6 +1625,13 @@ user-id = 189
 start = "2019-03-30"
 end = "2026-02-07"
 aggregated-from = "https://raw.githubusercontent.com/swsnr/darklightd/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.rusqlite]]
+criteria = "safe-to-run"
+user-id = 5062
+start = "2019-03-10"
+end = "2026-03-17"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/gnome-search-providers-vscode/refs/heads/main/supply-chain/audits.toml"
 
 [[trusted.rustix]]
 criteria = "safe-to-run"
