@@ -113,6 +113,18 @@ delta = "0.3.1 -> 0.3.2"
 notes = "A few slightly non-trivial changes around symlinks, but still safe-to-run"
 aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
 
+[[audits.libadwaita]]
+who = "Sebastian Wiesner <sebastian@swsnr.de>"
+criteria = "safe-to-run"
+delta = "0.7.1 -> 0.7.2"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[audits.libadwaita-sys]]
+who = "Sebastian Wiesner <sebastian@swsnr.de>"
+criteria = "safe-to-run"
+delta = "0.7.1 -> 0.7.2"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
 [[audits.libc]]
 who = "Sebastian Wiesner <sebastian@swsnr.de>"
 criteria = "safe-to-run"
@@ -2217,6 +2229,13 @@ user-id = 6743
 start = "2023-02-22"
 end = "2026-02-12"
 aggregated-from = "https://raw.githubusercontent.com/swsnr/picture-of-the-day/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.wol]]
+criteria = "safe-to-run"
+user-id = 4372
+start = "2025-03-25"
+end = "2026-03-26"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
 
 [[trusted.xdg-home]]
 criteria = "safe-to-run"
