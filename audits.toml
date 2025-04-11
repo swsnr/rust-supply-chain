@@ -60,6 +60,18 @@ delta = "0.8.20 -> 0.8.21"
 notes = "Only changes cfg and lint annotations, no other code change"
 aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
 
+[[audits.dtoa-short]]
+who = "Sebastian Wiesner <sebastian@swsnr.de>"
+criteria = "safe-to-run"
+delta = "0.3.3 -> 0.3.5"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/picture-of-the-day/refs/heads/main/supply-chain/audits.toml"
+
+[[audits.ego-tree]]
+who = "Sebastian Wiesner <sebastian@swsnr.de>"
+criteria = "safe-to-run"
+version = "0.10.0"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/picture-of-the-day/refs/heads/main/supply-chain/audits.toml"
+
 [[audits.equivalent]]
 who = "Sebastian Wiesner <sebastian@swsnr.de>"
 criteria = "safe-to-deploy"
@@ -80,6 +92,13 @@ delta = "0.5.2 -> 0.5.3"
 notes = "Only exports a new feature and slightly changes some type signatures."
 aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
 
+[[audits.event-listener-strategy]]
+who = "Sebastian Wiesner <sebastian@swsnr.de>"
+criteria = "safe-to-deploy"
+delta = "0.5.3 -> 0.5.4"
+notes = "No actual code change, just a new feature to expose a transitive dependency."
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
 [[audits.field-offset]]
 who = "Sebastian Wiesner <sebastian@swsnr.de>"
 criteria = "safe-to-run"
@@ -92,6 +111,16 @@ who = "Sebastian Wiesner <sebastian@swsnr.de>"
 criteria = "safe-to-run"
 delta = "0.1.4 -> 0.1.5"
 aggregated-from = "https://raw.githubusercontent.com/swsnr/gnome-search-providers-vscode/refs/heads/main/supply-chain/audits.toml"
+
+[[audits.futf]]
+who = "Sebastian Wiesner <sebastian@swsnr.de>"
+criteria = "safe-to-run"
+version = "0.1.5"
+notes = """
+Heavily relies on unsafe, prob. for performance.  unsafe decode looks good, but
+didn't audit the other unsafe code in detail.
+"""
+aggregated-from = "https://raw.githubusercontent.com/swsnr/picture-of-the-day/refs/heads/main/supply-chain/audits.toml"
 
 [[audits.futures]]
 who = "Sebastian Wiesner <sebastian@swsnr.de>"
@@ -154,6 +183,19 @@ who = "Sebastian Wiesner <sebastian@swsnr.de>"
 criteria = "safe-to-run"
 delta = "0.4.25 -> 0.4.26"
 aggregated-from = "https://raw.githubusercontent.com/swsnr/git-gone/refs/heads/main/supply-chain/audits.toml"
+
+[[audits.log]]
+who = "Sebastian Wiesner <sebastian@swsnr.de>"
+criteria = "safe-to-run"
+delta = "0.4.26 -> 0.4.27"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[audits.mac]]
+who = "Sebastian Wiesner <sebastian@swsnr.de>"
+criteria = "safe-to-deploy"
+version = "0.1.1"
+notes = "Just a few trivial macros, no unsafe code, looks very safe to use."
+aggregated-from = "https://raw.githubusercontent.com/swsnr/picture-of-the-day/refs/heads/main/supply-chain/audits.toml"
 
 [[audits.macaddr]]
 who = "Sebastian Wiesner <sebastian@swsnr.de>"
@@ -277,6 +319,12 @@ delta = "1.0.19 -> 1.0.20"
 notes = "No code changes"
 aggregated-from = "https://raw.githubusercontent.com/swsnr/picture-of-the-day/refs/heads/main/supply-chain/audits.toml"
 
+[[audits.scraper]]
+who = "Sebastian Wiesner <sebastian@swsnr.de>"
+criteria = "safe-to-run"
+version = "0.23.1"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/picture-of-the-day/refs/heads/main/supply-chain/audits.toml"
+
 [[audits.serde]]
 who = "Sebastian Wiesner <sebastian@swsnr.de>"
 criteria = "safe-to-deploy"
@@ -325,6 +373,12 @@ who = "Sebastian Wiesner <sebastian@swsnr.de>"
 criteria = "safe-to-run"
 delta = "1.0.138 -> 1.0.139"
 notes = "Only documentation changes and dependency updates."
+aggregated-from = "https://raw.githubusercontent.com/swsnr/picture-of-the-day/refs/heads/main/supply-chain/audits.toml"
+
+[[audits.siphasher]]
+who = "Sebastian Wiesner <sebastian@swsnr.de>"
+criteria = "safe-to-run"
+version = "1.0.1"
 aggregated-from = "https://raw.githubusercontent.com/swsnr/picture-of-the-day/refs/heads/main/supply-chain/audits.toml"
 
 [[audits.smallvec]]
@@ -395,6 +449,13 @@ who = "Sebastian Wiesner <sebastian@swsnr.de>"
 criteria = "safe-to-run"
 delta = "1.0.16 -> 1.0.17"
 aggregated-from = "https://raw.githubusercontent.com/swsnr/git-gone/refs/heads/main/supply-chain/audits.toml"
+
+[[audits.utf-8]]
+who = "Sebastian Wiesner <sebastian@swsnr.de>"
+criteria = "safe-to-run"
+version = "0.7.6"
+notes = "Trace amounts of unsafe, didn't audit decoding logic."
+aggregated-from = "https://raw.githubusercontent.com/swsnr/picture-of-the-day/refs/heads/main/supply-chain/audits.toml"
 
 [[audits.version-compare]]
 who = "Sebastian Wiesner <sebastian@swsnr.de>"
@@ -702,6 +763,13 @@ user-id = 33035
 start = "2022-07-17"
 end = "2026-02-07"
 aggregated-from = "https://raw.githubusercontent.com/swsnr/darklightd/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.dtoa]]
+criteria = "safe-to-run"
+user-id = 3618
+start = "2019-05-02"
+end = "2026-04-10"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/picture-of-the-day/refs/heads/main/supply-chain/audits.toml"
 
 [[trusted.endi]]
 criteria = "safe-to-run"
@@ -1254,6 +1322,14 @@ start = "2019-04-02"
 end = "2026-02-12"
 aggregated-from = "https://raw.githubusercontent.com/swsnr/picture-of-the-day/refs/heads/main/supply-chain/audits.toml"
 
+[[trusted.html5ever]]
+criteria = "safe-to-run"
+user-id = 2396
+start = "2019-04-27"
+end = "2026-04-10"
+notes = "Respectable whatwg & servo person"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/picture-of-the-day/refs/heads/main/supply-chain/audits.toml"
+
 [[trusted.ignore]]
 criteria = "safe-to-run"
 user-id = 189
@@ -1432,6 +1508,13 @@ start = "2021-06-12"
 end = "2026-02-07"
 aggregated-from = "https://raw.githubusercontent.com/swsnr/darklightd/refs/heads/main/supply-chain/audits.toml"
 
+[[trusted.lock_api]]
+criteria = "safe-to-run"
+user-id = 2915
+start = "2019-05-04"
+end = "2026-04-10"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/picture-of-the-day/refs/heads/main/supply-chain/audits.toml"
+
 [[trusted.logcontrol]]
 criteria = "safe-to-run"
 user-id = 4372
@@ -1473,6 +1556,22 @@ user-id = 4372
 start = "2023-09-30"
 end = "2026-02-22"
 aggregated-from = "https://raw.githubusercontent.com/swsnr/gnome-search-providers-vscode/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.markup5ever]]
+criteria = "safe-to-run"
+user-id = 2396
+start = "2019-04-27"
+end = "2026-04-10"
+notes = "Respectable whatwg & servo person"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/picture-of-the-day/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.match_token]]
+criteria = "safe-to-run"
+user-id = 2396
+start = "2025-02-04"
+end = "2026-04-10"
+notes = "Respectable whatwg & servo person"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/picture-of-the-day/refs/heads/main/supply-chain/audits.toml"
 
 [[trusted.memchr]]
 criteria = "safe-to-run"
@@ -1518,6 +1617,13 @@ start = "2019-05-15"
 end = "2026-02-07"
 aggregated-from = "https://raw.githubusercontent.com/swsnr/darklightd/refs/heads/main/supply-chain/audits.toml"
 
+[[trusted.new_debug_unreachable]]
+criteria = "safe-to-run"
+user-id = 2017
+start = "2019-02-26"
+end = "2026-04-10"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/picture-of-the-day/refs/heads/main/supply-chain/audits.toml"
+
 [[trusted.ordered-stream]]
 criteria = "safe-to-run"
 user-id = 6423
@@ -1560,6 +1666,55 @@ criteria = "safe-to-run"
 user-id = 3623
 start = "2022-01-15"
 end = "2026-02-12"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/picture-of-the-day/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.parking_lot]]
+criteria = "safe-to-run"
+user-id = 2915
+start = "2019-05-04"
+end = "2026-04-10"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/picture-of-the-day/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.parking_lot_core]]
+criteria = "safe-to-run"
+user-id = 2915
+start = "2019-05-04"
+end = "2026-04-10"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/picture-of-the-day/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.phf]]
+criteria = "safe-to-run"
+user-id = 51017
+start = "2021-06-17"
+end = "2026-04-10"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/picture-of-the-day/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.phf_codegen]]
+criteria = "safe-to-run"
+user-id = 51017
+start = "2021-06-17"
+end = "2026-04-10"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/picture-of-the-day/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.phf_generator]]
+criteria = "safe-to-run"
+user-id = 51017
+start = "2021-06-17"
+end = "2026-04-10"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/picture-of-the-day/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.phf_macros]]
+criteria = "safe-to-run"
+user-id = 51017
+start = "2021-06-17"
+end = "2026-04-10"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/picture-of-the-day/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.phf_shared]]
+criteria = "safe-to-run"
+user-id = 51017
+start = "2021-06-17"
+end = "2026-04-10"
 aggregated-from = "https://raw.githubusercontent.com/swsnr/picture-of-the-day/refs/heads/main/supply-chain/audits.toml"
 
 [[trusted.pkg-config]]
@@ -1683,6 +1838,13 @@ start = "2019-05-02"
 end = "2025-10-31"
 notes = "swsnr trusts dtolnay"
 aggregated-from = "https://raw.githubusercontent.com/swsnr/gnome-search-providers-vscode/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.scopeguard]]
+criteria = "safe-to-run"
+user-id = 2915
+start = "2020-02-16"
+end = "2026-04-10"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/picture-of-the-day/refs/heads/main/supply-chain/audits.toml"
 
 [[trusted.serde]]
 criteria = "safe-to-run"
@@ -1825,6 +1987,22 @@ start = "2022-10-10"
 end = "2026-02-22"
 aggregated-from = "https://raw.githubusercontent.com/swsnr/picture-of-the-day/refs/heads/main/supply-chain/audits.toml"
 
+[[trusted.string_cache]]
+criteria = "safe-to-run"
+user-id = 2396
+start = "2021-10-12"
+end = "2026-04-10"
+notes = "Respectable whatwg & servo person"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/picture-of-the-day/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.string_cache_codegen]]
+criteria = "safe-to-run"
+user-id = 2396
+start = "2022-03-27"
+end = "2026-04-10"
+notes = "Respectable whatwg & servo person"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/picture-of-the-day/refs/heads/main/supply-chain/audits.toml"
+
 [[trusted.syn]]
 criteria = "safe-to-run"
 user-id = 3618
@@ -1892,6 +2070,14 @@ start = "2019-03-06"
 end = "2025-10-26"
 notes = "Trusted by mozilla"
 aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[trusted.tendril]]
+criteria = "safe-to-run"
+user-id = 2396
+start = "2022-03-27"
+end = "2026-04-10"
+notes = "Respectable whatwg & servo person"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/picture-of-the-day/refs/heads/main/supply-chain/audits.toml"
 
 [[trusted.thiserror]]
 criteria = "safe-to-run"
