@@ -72,6 +72,12 @@ criteria = "safe-to-run"
 version = "0.10.0"
 aggregated-from = "https://raw.githubusercontent.com/swsnr/picture-of-the-day/refs/heads/main/supply-chain/audits.toml"
 
+[[audits.enumflags2_derive]]
+who = "Sebastian Wiesner <sebastian@swsnr.de>"
+criteria = "safe-to-deploy"
+delta = "0.7.7 -> 0.7.11"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/darklightd/refs/heads/main/supply-chain/audits.toml"
+
 [[audits.equivalent]]
 who = "Sebastian Wiesner <sebastian@swsnr.de>"
 criteria = "safe-to-deploy"
@@ -98,6 +104,12 @@ criteria = "safe-to-deploy"
 delta = "0.5.3 -> 0.5.4"
 notes = "No actual code change, just a new feature to expose a transitive dependency."
 aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[audits.fastrand]]
+who = "Sebastian Wiesner <sebastian@swsnr.de>"
+criteria = "safe-to-deploy"
+delta = "2.1.1 -> 2.3.0"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/darklightd/refs/heads/main/supply-chain/audits.toml"
 
 [[audits.field-offset]]
 who = "Sebastian Wiesner <sebastian@swsnr.de>"
@@ -141,6 +153,12 @@ criteria = "safe-to-run"
 delta = "0.3.1 -> 0.3.2"
 notes = "A few slightly non-trivial changes around symlinks, but still safe-to-run"
 aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[audits.indexmap]]
+who = "Sebastian Wiesner <sebastian@swsnr.de>"
+criteria = "safe-to-run"
+delta = "2.8.0 -> 2.9.0"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/darklightd/refs/heads/main/supply-chain/audits.toml"
 
 [[audits.libadwaita]]
 who = "Sebastian Wiesner <sebastian@swsnr.de>"
@@ -375,6 +393,12 @@ delta = "1.0.138 -> 1.0.139"
 notes = "Only documentation changes and dependency updates."
 aggregated-from = "https://raw.githubusercontent.com/swsnr/picture-of-the-day/refs/heads/main/supply-chain/audits.toml"
 
+[[audits.signal-hook-registry]]
+who = "Sebastian Wiesner <sebastian@swsnr.de>"
+criteria = "safe-to-deploy"
+delta = "1.4.1 -> 1.4.2"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/darklightd/refs/heads/main/supply-chain/audits.toml"
+
 [[audits.siphasher]]
 who = "Sebastian Wiesner <sebastian@swsnr.de>"
 criteria = "safe-to-run"
@@ -393,6 +417,12 @@ criteria = "safe-to-run"
 delta = "0.5.7 -> 0.5.8"
 notes = "Only straight-forward wrappers around underlying C/syscall APIs; looks correct, but I didn't audit use of unsafe and correct use of these unsafe APIs."
 aggregated-from = "https://raw.githubusercontent.com/swsnr/turnon/refs/heads/main/supply-chain/audits.toml"
+
+[[audits.socket2]]
+who = "Sebastian Wiesner <sebastian@swsnr.de>"
+criteria = "safe-to-run"
+delta = "0.5.8 -> 0.5.9"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/darklightd/refs/heads/main/supply-chain/audits.toml"
 
 [[audits.strum]]
 who = "Sebastian Wiesner <sebastian@swsnr.de>"
@@ -425,6 +455,12 @@ criteria = "safe-to-deploy"
 delta = "0.1.0 -> 0.1.1"
 notes = "Explicitly forbids unsafe code now; remaining changes is just new license files"
 aggregated-from = "https://raw.githubusercontent.com/swsnr/git-gone/refs/heads/main/supply-chain/audits.toml"
+
+[[audits.tokio]]
+who = "Sebastian Wiesner <sebastian@swsnr.de>"
+criteria = "safe-to-run"
+delta = "1.44.1 -> 1.44.2"
+aggregated-from = "https://raw.githubusercontent.com/swsnr/darklightd/refs/heads/main/supply-chain/audits.toml"
 
 [[audits.toml]]
 who = "Sebastian Wiesner <sebastian@swsnr.de>"
